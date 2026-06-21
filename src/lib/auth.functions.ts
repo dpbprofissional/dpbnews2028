@@ -1,4 +1,4 @@
-import { createServerFn } from "@tanstack/react-start";
+import { createServerFn } from "@/lib/server-fns-mock";
 
 export const getSessionStatus = createServerFn({ method: "GET" }).handler(async () => {
   const { getSession } = await import("./auth-helpers.server");

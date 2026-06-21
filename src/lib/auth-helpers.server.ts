@@ -1,4 +1,4 @@
-import { useSession } from "@tanstack/react-start/server";
+import { useSession } from "@/lib/server-fns-mock";
 import { sessionConfig } from "./session.server";
 
 export async function getSession() {

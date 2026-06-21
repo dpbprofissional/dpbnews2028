@@ -1,4 +1,4 @@
-import { createServerFn } from "@tanstack/react-start";
+import { createServerFn } from "@/lib/server-fns-mock";
 
 async function requireAdmin() {
   const { requireAdmin: r } = await import("./auth-helpers.server");
