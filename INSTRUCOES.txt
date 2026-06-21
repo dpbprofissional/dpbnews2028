@@ -1,0 +1,25 @@
+COMO ATUALIZAR SEU SITE NO GITHUB E NETLIFY:
+
+1. NO GITHUB (dpbprofissional/dpbnews2028):
+   - Vá no seu repositório no GitHub.
+   - Clique em "Add file" -> "Upload files".
+   - Arraste TODOS os arquivos e pastas deste ZIP (exceto este arquivo de instruções) para o GitHub.
+   - Clique em "Commit changes".
+   - IMPORTANTE: Se existirem os arquivos 'pnpm-lock.yaml' ou 'package-lock.json' no seu GitHub, delete-os.
+
+2. NO NETLIFY:
+   - O Netlify vai detectar a mudança e começar o build automaticamente.
+   - Verifique se em "Site settings" -> "Build & deploy":
+     * Build command: npm run build
+     * Publish directory: dist
+   - Vá em "Site settings" -> "Environment variables" e adicione:
+     * DATABASE_URL: (sua url do neon que você me passou)
+     * SESSION_SECRET: (a chave que você me passou)
+
+3. O QUE FOI ALTERADO:
+   - O site agora é um SPA (Single Page Application).
+   - Adicionado 'netlify.toml' para corrigir o erro 404 nas rotas.
+   - 'package.json' limpo para evitar erros de instalação.
+   - 'index.html' movido para a raiz para compatibilidade total.
+
+Dúvidas? É só chamar!
