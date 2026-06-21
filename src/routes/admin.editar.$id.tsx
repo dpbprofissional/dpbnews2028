@@ -1,6 +1,6 @@
 import { createFileRoute, Link, notFound, useNavigate } from "@tanstack/react-router";
 import { queryOptions, useQueryClient, useSuspenseQuery } from "@tanstack/react-query";
-import { useServerFn } from "@tanstack/react-start";
+import { useServerFn } from "@/lib/server-fns-mock";
 import { useState } from "react";
 import { getArticleById, updateArticle } from "@/lib/articles.functions";
 import { ArticleForm } from "@/components/article-form";

@@ -1,5 +1,5 @@
 import { createFileRoute, useNavigate } from "@tanstack/react-router";
-import { useServerFn } from "@tanstack/react-start";
+import { useServerFn } from "@/lib/server-fns-mock";
 import { useState } from "react";
 import { loginAdmin } from "@/lib/auth.functions";
 

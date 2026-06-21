@@ -1,6 +1,6 @@
 import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
 import { queryOptions, useQueryClient, useSuspenseQuery } from "@tanstack/react-query";
-import { useServerFn } from "@tanstack/react-start";
+import { useServerFn } from "@/lib/server-fns-mock";
 import { deleteArticle, listArticles } from "@/lib/articles.functions";
 import { logoutAdmin } from "@/lib/auth.functions";
 
